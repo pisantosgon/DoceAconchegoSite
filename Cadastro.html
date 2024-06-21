@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Cadastro.css">
+    <title>Doce aconchego</title>
+    <script src="https://use.fontawesome.com/3661c174df.js"></script>
+</head>
+<body>
+    <main>
+        <header class="header-top">
+            <div class="header-logo">
+                <img src="assets/Doce_Aconchego-removebg-preview.png" alt="">
+            </div>
+            <div class="header-right">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <span>Ambiente seguro</span>
+            </div>
+        </header>
+        <div class="box-3">
+            <div class="box-1">
+                <form action="">
+                    <div class="form-input">
+                        <label for="nome" class="block">Nome completo</label>
+                        <input type="text" name="nome" id="inputnome" placeholder="Insira seu nome completo" class="input-medio" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="data-nascimento" class="block">Data de nascimento</label>
+                        <input type="date" name="data-nascimento" id="inputdata" class="input-medio" required>
+                    </div>
+                    <div class="form-input">
+                        <span for="sexo" class="block">Gênero</span>                  
+                        <input type="radio" id="InputMasc" name="Genero" value="Masculino">
+                        <label for="InputMasc">Masculino</label><br>
+                        <input type="radio" id="InputFem" name="Genero" value="Feminino">
+                        <label for="InputFem">Feminino</label><br>
+                        <input type="radio" id="InputOutro" name="Genero" value="Outro">
+                        <label for="InputOutro">Outro</label>
+                    </div>
+                    <div class="form-input">
+                        <label for="telefone" class="block">Celular</label>
+                        <input type="tel" id="InputTelefone" placeholder="(00)00000-0000" maxlength="14" class="input-medio" required>
+                    </div>
+            </div>
+                <div class="box-2">
+                    <div class="form-input">
+                        <label for="InputCPF" class="block">CPF</label>
+                        <input type="text" id="InputCPF" placeholder="000.000.000-00" maxlength="14" class="input-medio" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="InputEmail" class="block">Email</label>
+                        <input type="email" id="InputEmail" placeholder="Insira seu endereço de email" class="input-medio" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="InputSenha" class="block">Senha</label>
+                        <input type="password"id="InputSenha" maxlength="8" placeholder="********" class="input-medio" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="InputSenha2" class="block">Confirme sua senha</label>
+                        <input type="password" id="InputSenha2" maxlength="8" placeholder="********" class="input-medio" required>
+                    </div>
+                    <div class="form-input">
+                        <button  type="button" onclick="SalvarLogin()" class="btn">Cadastrar</button>
+                    </div>
+                </form>
+                </div>
+        </div>
+        <div class="voltar">
+            <span id="resposta"></span>
+        </div>
+        <div class="voltar">
+            <a href="home.html" class="btn">voltar para home</a>
+        </div>
+    </main>
+    <script src="assets/main.js"></script>
+</body>
+</html>

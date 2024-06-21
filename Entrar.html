@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Entrar.css">
+    <title>Doce aconchego</title>
+    <script src="assets/main.js"></script>
+    <script src="https://use.fontawesome.com/3661c174df.js"></script>
+</head>
+<body>
+    <main>
+        <header class="header-top">
+            <div class="header-logo">
+                <img src="assets/Doce_Aconchego-removebg-preview.png" alt="">
+            </div>
+            <div class="header-right">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <span>Ambiente seguro</span>
+            </div>
+        </header>
+        <div class="conteudo-principal">
+            <section class="box-1" >
+                <span class="frase" >Já sou cadastrado</span>
+                <div class="form-input">
+                    <label for="email" class="email" >Email</label>
+                    <input type="email" name="email" id="InputEmail" placeholder="Insira seu endereço de email" class="input-medio" required>
+                </div>
+                <div class="form-input">
+                    <label for="senha" class="senha" >Senha</label>
+                    <input type="password" name="senha" id="InputSenha" maxlength="8" placeholder="********" class="input-medio" required>
+                </div>
+                <div class="form-controle">   
+                    <button onclick="logar()" href="Home.html" class="btn">Entrar</button>
+                </div>
+                <div class="form-frase">
+                    <span id="resposta"></span>
+                    </div>
+            </section>
+            <section class="box-2" >
+                <img src="assets/familia.png" alt="">
+            </section>
+        </div>        
+    </main>
+</body>
+</html>
